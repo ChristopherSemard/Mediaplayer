@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c52cbb9b58.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="play">
+                    <div class="play__playing__cover">
+                        <img src="" alt="">
+                    </div>
+                    
+                    <div class="play__playing__infos">
+                        <p class="play__playing__infos__title"></p>
+                        <p class="play__playing__infos__artist"></p> 
+                    </div> 
+                    
+                    
+                <div class="play__playing__progress">
+                    <p class="play__playing__infos__duration"><span class="play__playing__infos__duration__current"></span> / <span class="play__playing__infos__duration__total"></span>   </p>
+                    <input type="range" 
+                        class="play__playing__infos__bar"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="1"
+                    ></input>
+                </div> 
+                <form class="play__form">
+                    <div class="play__control">
+                        <button class="play__control__back"><i class="fa-solid fa-backward-step"></i></button>
+                        <button class="play__control__play"><i class="fa-solid fa-play"></i></button>
+                        <button class="play__control__next"><i class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    <div class="play__volume">
+                        <button class="play__volume__minus"><i class="fa-solid fa-volume-low"></i></button>
+                        <input type="range" 
+                            class="play__volume__range"
+                            min="0"
+                            max="1"
+                            value="1"
+                            step="0.1"
+                        ></input>
+                        <button class="play__volume__plus"><i class="fa-solid fa-volume-high"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="library">
+                <h2 class="library__title">Library</h2>
+                <form class="library__search">
+                    <input type="search" placeholder="Rechercher">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <div class="library__music-list">
+
+                </div>
+
+
+            </div>
+        </main>
+
+        <template id="music">
+            <div class="music">
+                <img src="" alt="" class="music__cover">
+                <div class="music__infos">
+                    <p class="music__infos__title"></p>
+                    <p class="music__infos__artist"></p>
+                </div>
+                <button class="music__play" data-index=""><i class="fa-solid fa-play"></i></button>
+            </div>
+        </template>
+
+        <script src="app.js"></script>
+    </body>
+</html>
